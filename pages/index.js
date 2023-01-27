@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import Advertise from "../src/components/Advertise";
 import Counter from "../src/components/Counter";
 import Layout from "../src/layout/Layout";
+import Image from 'next/image'
 import { index2Course, testimonialtwoSlider } from "../src/sliderProps";
 const Index2 = () => {
   return (
@@ -39,7 +40,7 @@ const Index2 = () => {
                 </div>
                 <div className="admin-speech mt-110 rmt-35 wow fadeInUp delay-0-8s">
                   <div className="image">
-                    <img src="assets/images/hero/sss.jpeg" alt="Admin" />
+                    <Image src="/assets/images/hero/sss.jpeg" width={50} height={50} alt="Admin" />
                   </div>
                   <p className="mt-2">
                     لا أرى تحركات وتطورات الأســــــــواق
@@ -53,20 +54,23 @@ const Index2 = () => {
           </div>
         </div>
         <div className="hero-two-left wow fadeInUp delay-0-6s">
-          <img src="assets/images/hero/herooo.png" alt="Hero" />
+          <Image src="/assets/images/hero/herooo.png" alt="Hero" width={500} height={500} />
         </div>
         <div className="hero-two-right wow fadeInRight delay-0-6s">
-          <img src="assets/images/hero/hero-two-right.png" alt="Hero" />
+          <Image src="/assets/images/hero/hero-two-right.png" alt="Hero" width={407} height={640} />
         </div>
-        <img
+        <Image
           className="circle-one"
-          src="assets/images/shapes/circle-one.png"
+          src="/assets/images/shapes/circle-one.png"
           alt="Circle"
+          width={15} height={15}
         />
-        <img
+        <Image
           className="circle-two"
-          src="assets/images/shapes/circle-two.png"
+          src="/assets/images/shapes/circle-two.png"
           alt="Circle"
+          width={15} height={15}
+          
         />
       </section>
       {/* Hero Section End */}
@@ -147,7 +151,7 @@ const Index2 = () => {
           <Slider {...index2Course} className="coach-slider">
             <div className="coach-item style-two wow fadeInUp delay-0-2s">
               <div className="coach-image">
-                <img src="assets/images/coachs/courss1.png" alt="Coach" />
+                <Image src="/assets/images/coachs/courss1.png" alt="Coach" width={570} height={369} />
               </div>
               <div className="coach-content">
                 <Link href="/course-grid">
@@ -197,7 +201,7 @@ const Index2 = () => {
             </div>
             <div className="coach-item style-two wow fadeInUp delay-0-4s">
               <div className="coach-image">
-                <img src="assets/images/coachs/courss2.png" alt="Coach" />
+                <Image src="/assets/images/coachs/courss2.png" alt="Coach"width={570} height={369}  />
               </div>
               <div className="coach-content">
                 <Link href="/course-grid">
@@ -247,7 +251,7 @@ const Index2 = () => {
             </div>
             <div className="coach-item style-two wow fadeInUp delay-0-6s">
               <div className="coach-image">
-                <img src="assets/images/coachs/couress3.png" alt="Coach" />
+                <Image src="/assets/images/coachs/couress3.png" alt="Coach" width={570} height={369} />
               </div>
               <div className="coach-content">
                 <Link href="/course-grid">
@@ -297,7 +301,7 @@ const Index2 = () => {
             </div>
             <div className="coach-item style-two wow fadeInUp delay-0-2s">
               <div className="coach-image">
-                <img src="assets/images/coachs/courss1.png" alt="Coach" />
+                <Image src="/assets/images/coachs/courss1.png" alt="Coach"width={570} height={369}  />
               </div>
               <div className="coach-content">
                 <Link href="/course-grid">
@@ -347,7 +351,7 @@ const Index2 = () => {
             </div>
             <div className="coach-item style-two wow fadeInUp delay-0-4s">
               <div className="coach-image">
-                <img src="assets/images/coachs/courss2.png" alt="Coach" />
+                <Image src="/assets/images/coachs/courss2.png" alt="Coach"width={570} height={369}  />
               </div>
               <div className="coach-content">
                 <Link href="/course-grid">
@@ -397,7 +401,7 @@ const Index2 = () => {
             </div>
             <div className="coach-item style-two wow fadeInUp delay-0-6s">
               <div className="coach-image">
-                <img src="assets/images/coachs/couress3.png" alt="Coach" />
+                <Image src="/assets/images/coachs/couress3.png" alt="Coach" width={570} height={369}  />
               </div>
               <div className="coach-content">
                 <Link href="/course-grid">
@@ -518,8 +522,8 @@ const Index2 = () => {
             <div className="col-lg-6">
               <div className="about-two-left rmb-75 wow fadeInLeft delay-0-2s">
                 <div className="about-two-images">
-                  <img src="assets/images/about/about11.png" alt="About" />
-                  <img src="assets/images/about/about12.png" alt="About" />
+                  <img className="img about1" src="/assets/images/about/about11.png" alt="About" width={384} height={290} />
+                  <img className="img about2" src="/assets/images/about/about12.png" alt="About" width={384} height={290}/>
                 </div>
                 <div className="about-image-over">
                   <div className="about-image-over-item">

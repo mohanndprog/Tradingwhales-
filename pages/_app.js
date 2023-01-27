@@ -21,6 +21,7 @@ function MyApp({ Component, pageProps }) {
           rel="shortcut icon"
           href="assets/images/favicon.png"
           type="image/x-icon"
+          
         />
         {/*====== Google Fonts ======*/}
         <link
